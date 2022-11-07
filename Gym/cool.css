@@ -181,12 +181,56 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
   
 
 }
-
+/*==============================================*/
 
 .footer {
+  display: grid;
+  grid-template-columns: 0.3fr 1.8fr 0.1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "hours contact_foot logo_foot";
   grid-area: footer;
-  height: 40px;
+  border-top: black solid 2px;
+  margin-top: 2%;
+  height: 60%;
 }
+
+.hours{
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  grid-area: hours;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.contact_foot{
+  margin-top: 2%;
+  grid-area: contact_foot;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.logo_foot{
+  margin-top: 20%;
+  margin-right: 30%;
+  grid-area: logo_foot;
+  float: right;
+  background-image: url(scr/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.foot_info{
+  margin-left: 8%;
+  display: inline-block;
+}
+
+
+/*================================================*/
 
 html,
 body,
@@ -198,7 +242,7 @@ body,
 
 
 .container * {
- /* border: 1px solid red;*/
+ /*border: 1px solid red;*/
   position: relative;
 }
 
@@ -213,121 +257,3 @@ body,
   align-items: center;
   justify-content: center;
 }
-
-/*=====================================================*/
-
-
-.container_about_us {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 2.4fr 0.3fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header header header header header"
-    "info info info info info info"
-    "footer footer footer footer footer footer";
-}
-
-
-.info {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "about about about"
-    "contact contact contact"
-    "map map map"
-    "socialmedia socialmedia socialmedia";
-  grid-area: info;
-}
-
-.about { grid-area: about; 
-    border-radius: 10px;
-    background: #73AD21;
-    width: 60%;
-    height: 400px;
-
-}
-
-.contact {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "localization tel email";
-  grid-area: contact;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-h1{
-  margin-top: 0%;
-  font-size: 40px;
-}
-
-
-.icon{
-  font-size: 50px;
-  text-align: center;
-}
-
-.contact_text{
-text-align: center;
-}
-
-.contact_box{
-  border: 2px solid black;
-  border-radius: 10px;
-  background: #73AD21;
-  margin-left: 18%;
-  width: 250px;
-  height: 320px;
-}
-
-.localization { grid-area: localization;
-}
-
-.tel { grid-area: tel; 
-}
-
-.email { grid-area: email; 
-}
-
-.map { grid-area: map; 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
-  width: 90%;
-  height: 500px;
-  background-image: url(scr/Map.png);
-}
-
-.socialmedia {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "facebook instagram tiktok twitter";
-  grid-area: socialmedia;
-  height: 25%;
-  padding-top: 5%;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-.social{
-  font-size: 50px;
-  margin-left: 40%;
-}
-
-.instagram { grid-area: instagram; }
-
-.facebook { grid-area: facebook; }
-
-.tiktok { grid-area: tiktok; }
-
-.twitter { grid-area: twitter; }
