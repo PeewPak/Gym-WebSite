@@ -1,7 +1,7 @@
 body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
 
 .container_about_us * {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
    position: relative;
  }
  
@@ -95,7 +95,7 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
   
   html,
   body,
-  .container {
+  .container_about_us {
     height: 100%;
     margin: 0;
   }
