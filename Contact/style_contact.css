@@ -1,7 +1,7 @@
 body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
 
 .container_about_us * {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
    position: relative;
  }
  
@@ -102,7 +102,7 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
 
   .container_about_us {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 2.5fr 0.3fr;
+    grid-template-rows: 0.2fr 2.7fr 0.3fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -114,7 +114,7 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
   
   .info {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -126,13 +126,13 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
   }
   
   .about { grid-area: about; 
-      display: block;
+      margin-top: 2%;
       margin-left: 5%;
       padding: 2%;
       border-radius: 10px;
       background: #73AD21;
       width: 60%;
-      height: 400px;
+      height: 50%;
       font-size: 20px;
       font-family: "Times New Roman", Times, serif;
       text-align: left;
@@ -148,7 +148,7 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
     grid-area: contact;
     margin-left: 15%;
     margin-right: 15%;
-    height: 320px;
+    height: 55%;
   }
   
   h1{
@@ -166,6 +166,8 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
   
   .contact_text{
   text-align: center;
+  margin-left: 5%;
+  width: 90%;
   }
   
   .contact_box{
@@ -186,6 +188,7 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
   }
   
   .map { grid-area: map; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -196,23 +199,34 @@ body{ background: radial-gradient(circle, #00a9ab 0%, #69279d 100%);}
   }
   
   .socialmedia {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "facebook instagram tiktok twitter";
+      "social_text facebook instagram tiktok twitter";
     grid-area: socialmedia;
-    height: 25%;
-    padding-top: 5%;
+    height: 70%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
   }
   
+.social_text{
+  height: 80%;
+  padding-top: 7%;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: black solid 3px;
+}
+
   .social{
-    margin-left: 40%;
+    margin-top: 9%;
+    display:inline-block;
     font-size: 70px;
     width: 50px;
+    margin-left: 30%;
   }
   
   .instagram { grid-area: instagram; }
