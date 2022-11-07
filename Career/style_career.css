@@ -120,17 +120,26 @@ h1{
     margin-bottom: 5%;
 }
 
-h2{
-    font-size: 35px;
-    display: inline-block;
-    margin-left: 1%;
+
+.title{
+  height: auto;
+  width: 10%;
+  font-size: 25px;
+  display: inline-block;
+  margin-left: 1%;
 }
 
-p{
+.dis{
+    width: 40%;
+    height: auto;
     font-size: 20px;
     text-align: center;
     display: inline-block;
-    margin-left: 10%;
+    position: absolute;
+}
+
+.butt{
+  
 }
 
 .apply{
@@ -148,6 +157,7 @@ p{
     color: rgb(0, 0, 0);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
+
 
   .job{
     border: black solid 1px;
