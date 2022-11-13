@@ -1,0 +1,110 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1.6fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "slider slider slider"
+    "event1 event2 event3"
+    "opinie opinie opinie"
+    "footer footer footer";
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ".";
+  grid-area: slider;
+  height: 400px;
+}
+
+
+#slider {
+
+    height: 400px;
+    width: auto;
+    background-image: url(scr/slajderZajebisty.png);
+    animation: slider 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% { background-position: 0px 0px; }
+    16.7% { background-position: 0px 0px; }
+    33.4% { background-position: -400px 0px;  }
+    50.1% { background-position: -400px 0px; }
+    66.8% { background-position: -800px 0px; }
+    83.5% { background-position: -800px 0px; }
+    100% { background-position: -1200px 0px; }
+}
+
+.event1 {
+  grid-area: event1;
+   border-radius: 10px;
+  background: #73AD21;
+  margin-left: 18%;
+  width: 250px;
+  height: 320px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.event2 {
+  grid-area: event2;
+  border-radius: 10px;
+  background: #73AD21;
+  margin-left: 25%;
+  width: 250px;
+  height: 320px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.event3 {
+  grid-area: event3;
+  border-radius: 10px;
+  background: #73AD21;
+  margin-left: 33%;
+  width: 250px;
+  height: 320px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.opinie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "opnie1 opnie2";
+  grid-area: opinie;
+  height: 140px;
+}
+
+.opnie1 {
+  grid-area: opnie1;
+  height: 100px;
+}
+
+.opnie2 {
+  grid-area: opnie2;
+  height: 100px;
+}
+
+#op{
+  margin-top: 10px;
+   grid-area: event3;
+  border-radius: 10px;
+  background: #73AD21;
+  
+  width: 754px;
+  height: 120px;
+  
+
+}
