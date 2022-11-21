@@ -1,0 +1,4 @@
+[{"id":1, "name":"Mata do cwiczen", "in_storage":12, "price":150.99},
+ {"id":2, "name":"hantle_lekkie", "in_storage":39, "price":99.99},
+ {"id":3, "name":"hantle_ciezkie", "in_storage":12, "price":289.5},
+ {"id":4, "name":"guma", "in_storage":45, "price":40.0}]
