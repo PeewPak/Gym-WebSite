@@ -1,0 +1,65 @@
+.container_account {  display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      "Photo Details";
+  }
+  
+  .Photo { grid-area: Photo; 
+    background-image: url(scr/img_avatar2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 70px;
+
+}
+  
+  .Details {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "First-name Last-name"
+      "Gender Age"
+      "Height Weight"
+      "Balance Balance";
+    grid-area: Details;
+  }
+  
+.inputs{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+input{
+    font-size: 25px;
+    width: 300px;
+    height: 50px;
+}
+
+  .First-name { grid-area: First-name; }
+  
+  .Last-name { grid-area: Last-name; }
+  
+  .Gender { grid-area: Gender; }
+  
+  .Age { grid-area: Age; }
+  
+  .Height { grid-area: Height; }
+  
+  .Weight { grid-area: Weight; }
+  
+  .Balance { grid-area: Balance; }
+
+  .userBalance{
+    margin-top: 10%;
+    font-size: 30px;
+  }
+  
+  
