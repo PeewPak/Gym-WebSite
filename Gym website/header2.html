@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style_header2.css">
+  <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+
+<div class="newHeader">
+    <div id="avatar"> <span class="dot"><span class="dot2"></div>
+    <div id="logo1"></div>
+
+
+    <div class="loginDiv">
+        <button class="button-6" onclick="document.getElementById('loginBox').style.display='block'">Login</button>
+    </div>
+
+      <div class="registerDiv">
+        <button class="button-6" onclick="document.getElementById('registerBox').style.display='block'">Sign Up</button>
+      </div>
+</div>
+<div class="container">
+ <div  id="header" class="header">
+      <a id="myID" class="logo" href="Contact.html"></a>
+      <div class="nav_offer">
+        <div id="nav"><a href="">Offer</a></div>
+      </div>
+      <div class="nav_shop">
+        <div id="nav"> <a href="shop.html">Shop</a> </div>
+      </div>
+      <div class="nav_activities">
+        <div id="nav"><a href="GymPass.html">Gym Pass</a></div>
+      </div>
+      <div class="nav_schedule">
+        <div id="nav"><a href="schedule.html"> Schedule</a></div>
+      </div>
+      <div class="nav_job">
+        <div id="nav"> <a href="Career.html">Job</a> </div>
+      </div>
+      <div class="nav_about">
+        <div id="nav"> <a href="Contact.html">About Us</a> </div>
+      </div>
+    </div>
+
+<div class="slider">
+      <div id='slider'></div>
+    </div>
+
+    <div class="events">
+
+          <div id="event1"></div>
+          <div id="event2"></div>
+          <div id="event3"></div>
+
+
+
+
+    </div>
+
+    
+      
+
+
+
+
+
+
+
+
+    <div class="footer">
+      <div class="hours">
+        <div>Opening hours: </div>
+        <div>Monday - Friday (8:00 - 20:00)</div>
+        <div>Weekend (10:00 - 21:00)</div>
+      </div>
+
+      <div class="contact_foot">
+        <div class="foot_info">Adress: ul. Kurwy 2/4, 8800 Viborg</div>
+        <div class="foot_info">Tel.: +48 666 666 666</div>
+        <div class="foot_info">Email: niejedztyle@gmail.com</div>
+      </div>
+
+      <div class="logo_foot"></div>
+    </div>
+
+
+    <script type="text/javascript">
+      var startProductBarPos=-1;
+window.onscroll=function(){
+  var bar = document.getElementById('header');
+  if(startProductBarPos<0)startProductBarPos=findPosY(bar);
+
+  if(pageYOffset>startProductBarPos){
+    bar.style.position='fixed';
+    bar.style.top=0;
+  }else{
+    bar.style.position='relative';
+  }
+
+};
+
+function findPosY(obj) {
+  var curtop = 0;
+  if (typeof (obj.offsetParent) != 'undefined' && obj.offsetParent) {
+    while (obj.offsetParent) {
+      curtop += obj.offsetTop;
+      obj = obj.offsetParent;
+    }
+    curtop += obj.offsetTop;
+  }
+  else if (obj.y)
+    curtop += obj.y;
+  return curtop;
+}
+
+
+myID = document.getElementById("myID");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y < 200) {
+    myID.className = "bottomMenu show"
+  } else {
+    myID.className = "logo"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+
+
+    </script>
+
+
+
+</body>
+</html>

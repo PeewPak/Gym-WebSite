@@ -1,0 +1,42 @@
+#all{
+	height: 600px;
+	width: 1515px;
+	/*background-color: green;*/
+	padding-top: 100px;
+}
+
+#left{
+	/*background: red;*/
+	height: 520px;
+	width: 750px;
+	float: left;
+}
+#black{
+	height: 400px;
+	width: 2px;
+	background-color: black;
+	float: left;
+	margin-top: 60px;
+}
+
+#right{
+	/*background: blue;*/
+	height: 520px;
+	width: 750px;
+	float: right	;
+}
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+#noc{
+  height: 220px;
+  width: 175px;
+  background-color:lightgrey ;
+  margin-top: 25px;
+  margin-right:100px ;
+  margin-left:100px ;
+
+}

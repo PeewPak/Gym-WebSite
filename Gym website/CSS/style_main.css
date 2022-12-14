@@ -1,0 +1,188 @@
+body{padding-right: 10px;
+padding-left: 10px;
+  }
+  body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+a{ text-decoration: none; }
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1.6fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "slider slider slider"
+    "event1 event2 event3"
+    "opinie opinie opinie"
+    "footer footer footer";
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ".";
+  grid-area: slider;
+  height: 400px;
+}
+
+
+#slider {
+    margin-top: 30px;
+    height: 600px;
+    width: auto;
+    background-image: url(CSS/Fitness.jpeg);
+    animation: slider 12s;
+    animation-iteration-count: infinite;
+}
+
+
+#typ{
+  margin-left: 350px;
+}
+
+@keyframes slider {
+    0% { background-position: 0px 0px; }
+    16.7% { background-position: 0px 0px; }
+    33.4% { background-position: -400px 0px;  }
+    50.1% { background-position: -400px 0px; }
+    66.8% { background-position: -800px 0px; }
+    83.5% { background-position: -800px 0px; }
+    100% { background-position: -1200px 0px; }
+}
+
+.event1 {
+  grid-area: event1;
+   border-radius: 10px;
+   /*background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(64,192,190,1) 50%, rgba(0,0,0,1) 98%, rgba(17,18,36,1) 100%);*/
+  margin-left: 18%;
+  width: 250px;
+  height: 320px;
+  margin-top: 500px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.event1:hover{
+  -webkit-transform:  scale(1.1,1.1); 
+    filter: grayscale(0%);
+   -moz-transform:  scale(1.1,1.1); 
+   -o-transform:  scale(1.1,1.1);
+ }
+
+
+.event1 #butt1{
+  position: absolute;
+}
+
+
+
+#pic1 {
+
+
+}
+
+.butt-new{
+  margin-left: 90px;
+}
+
+
+.event2 {
+  grid-area: event2;
+  border-radius: 10px;
+  /*background: #73AD21;*/
+  margin-left: 25%;
+  width: 250px;
+  height: 320px;
+  margin-top: 500px;
+  margin-bottom: 10px;
+
+}
+
+#pic11{
+  border-radius: 30px;
+}
+
+.event2:hover{
+  -webkit-transform:  scale(1.1,1.1); 
+    filter: grayscale(0%);
+   -moz-transform:  scale(1.1,1.1); 
+   -o-transform:  scale(1.1,1.1);
+ }
+
+.event3 {
+  grid-area: event3;
+  border-radius: 10px;
+  /*background: #73AD21;*/
+  margin-left: 33%;
+  width: 250px;
+  height: 320px;
+  margin-top: 500px;
+  margin-bottom: 10px;
+}
+
+.event3:hover{
+  -webkit-transform:  scale(1.1,1.1); 
+    filter: grayscale(0%);
+   -moz-transform:  scale(1.1,1.1); 
+   -o-transform:  scale(1.1,1.1);
+ }
+
+.opinie {
+  width: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "opnie1 opnie2 opnie3";
+  grid-area: opinie;
+  height: 140px;
+}
+
+.opnie1 {
+  grid-area: opnie1;
+  height: 100px;
+  width: 50px;
+}
+
+
+.opnie2
+{
+  grid-area: opnie2;
+ 
+  height: 100px;
+}
+
+.opnie3 {
+  grid-area: opnie3;
+  height: 100px;
+  width: 50px;
+  }
+
+#op{
+  margin-top: 10px;
+  border-radius: 10px;
+ 
+  
+  width: 200px;
+  height: 120px;
+  
+
+}
+
+
+#text1{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#butt1{
+  position: sticky;
+}

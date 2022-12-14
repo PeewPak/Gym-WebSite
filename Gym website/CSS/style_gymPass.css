@@ -1,0 +1,32 @@
+.kropka{
+  height: 700px;
+  width: 1500px;
+  background: linear-gradient(45deg,#FFFFFF,#5e5e5e) ;
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  margin-top: 70px;
+}
+@keyframes color{ 
+  0%{ background-position: 0 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0 50%; }
+
+}
+
+
+#noc{
+  height: 300px;
+  width: 250px;
+  background-color:lightgrey ;
+  margin-top: 25px;
+  margin-right:100px ;
+  margin-left:100px ;
+
+}
+
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
